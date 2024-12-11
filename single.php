@@ -1,5 +1,5 @@
 <?php
-get_header();
+    get_header();
 ?>
 
 <div class="guide-content">
@@ -54,7 +54,7 @@ get_header();
                 endwhile;
                 wp_reset_postdata(); // Reset the query
                 else : echo '<p>No posts found</p>';
-            endif;
+                endif;
             ?>
         </div>
         <a href="<?php echo site_url('/destinations'); ?>" class="white-text green-button">View More</a>
@@ -63,13 +63,13 @@ get_header();
 <!-- Add Comment Section -->
 <div class="comments-section">
     <?php
-    // Display comments and the comment form
-    if (comments_open() || get_comments_number()) :
-        comments_template(); // This will load the comment form and existing comments
-    endif;
+        // Display comments and the comment form
+        if (comments_open() || get_comments_number()) :
+            comments_template(); // This will load the comment form and existing comments
+        endif;
     ?>
 </div>
 
 <?php
-get_footer();
+    get_footer();
 ?>

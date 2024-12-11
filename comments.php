@@ -1,10 +1,7 @@
 <div id="comments" class="comments-area">
     <?php if ( have_comments() ) : ?>
         <h2 class="comments-title">
-            <?php
-                printf( _n( 'One comment on "%2$s"', '%1$s comments on "%2$s"', get_comments_number(), 'textdomain' ),
-                    number_format_i18n( get_comments_number() ), get_the_title() );
-            ?>
+            Comments
         </h2>
 
         <ol class="comment-list">
@@ -20,8 +17,8 @@
 
         <!-- Pagination for comments -->
         <?php the_comments_pagination( array(
-            'prev_text' => '&larr; Older comments',
-            'next_text' => 'Newer comments &rarr;',
+            'prev_text' => 'Older comments',
+            'next_text' => 'Newer comments',
         ) ); ?>
 
     <?php endif; // If no comments ?>
@@ -31,7 +28,7 @@
     if ( comments_open() ) :
         comment_form(); // Display the comment form
     else :
-        echo '<p class="no-comments">Comments are closed for this post.</p>';
+        echo '<p>Comments are closed for this post.</p>';
     endif;
     ?>
 </div><!-- .comments-area -->

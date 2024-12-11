@@ -2,9 +2,13 @@ function toggleMenu() {
     const menuItems = document.querySelector('.menu-items');
     
     if (menuItems.style.right === '-500px') {
-        menuItems.style.right = '0'; // Show the menu
+        // Show the menu
+        menuItems.style.right = '0';
+                 
     } else {
-        menuItems.style.right = '-500px'; // Hide the menu
+         // Hide the menu
+        menuItems.style.right = '-500px';
+        
     }
 }
 

@@ -32,6 +32,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-family: sans-serif;
 }
 
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 button, a{
     cursor: pointer;
     transition: 0.3s ease;
@@ -139,7 +144,6 @@ a{
 
 
 .menu-items{
-    display: none;
     flex-direction: column;
     gap: 20px;
     align-items: center;
@@ -148,7 +152,6 @@ a{
     background-color: var(--primary-color);
     position: absolute;
     top: 0px;
-    right: -500px;
     padding: 40px;
     color: white;
     box-shadow: 0 0 5px black;
@@ -372,6 +375,11 @@ a{
     .footer-logo{
         display: none;
     }
+
+    .footer-part{
+        padding: 20px;
+        justify-content: center;
+    }
 }
 
 .footer-message{
@@ -384,6 +392,14 @@ a{
 @media (max-width: 700px){
     .footer-message{
         display: none;
+    }
+
+    .footer-icons{
+        justify-content: center;
+    }
+
+    .footer-part{
+        text-align: center;
     }
 }
 
@@ -523,6 +539,15 @@ a{
     }
 }
 
+.post{
+    min-width: 300px;
+}
+
+.posts-lists{
+    justify-content: center;
+    text-align: center;
+}
+
 
 /* SINGLE.PHP STYLE ============================ */
 .guide-content {
@@ -568,6 +593,9 @@ a{
 /* General styles for the Destinations page =================*/
 .destinations-page {
     padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page-header{

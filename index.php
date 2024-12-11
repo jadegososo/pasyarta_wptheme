@@ -1,5 +1,5 @@
 <?php
-get_header();
+    get_header();
 ?>
 
 <div class="main-content">
@@ -66,6 +66,7 @@ get_header();
                     'posts_per_page' => 3,
                     'post_status'    => 'publish', // Only show published posts
                 );
+
                 $latest_posts = new WP_Query($args);
 
                 // Check if there are any posts
@@ -109,12 +110,11 @@ get_header();
                 Eastern Visayas is a region of vibrant traditions, rich history, and warm, resilient people whose spirit shines through in every aspect of their culture. Known for colorful festivals like the Pintados-Kasadyaan and Sangyaw, it celebrates heritage through music, dance, and art. The region’s historical landmarks, including the MacArthur Landing Memorial and centuries-old churches, tell stories of courage and faith. Visitors can savor unique delicacies such as binagol, moron, and suman latik while exploring breathtaking landscapes like the iconic San Juanico Bridge, pristine beaches, and majestic waterfalls. Through its captivating history, stunning scenery, and inspiring stories of unity and resilience, Eastern Visayas offers an enriching experience that showcases the true heart of Filipino culture.
             </p>
             <a href="<?php echo site_url('/about-us'); ?>" class="green-button">Learn More</a>
-        </div>
-        
+        </div>        
     </div>
-
+    
 </div>
 
 <?php
-get_footer();
+    get_footer();
 ?>

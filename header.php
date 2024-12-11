@@ -34,9 +34,8 @@
                 </a>
             </button>
         </div>
-        <i class="fa-solid fa-bars burger-menu" onclick="toggleMenu()"></i>   
-    </header>
-<div class="menu-items">
+        <i class="fa-solid fa-bars burger-menu" onclick="toggleMenu()"></i>
+        <div class="menu-items" style="right: -500px;">
     <div class="close-div">
         <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
     </div>
@@ -44,4 +43,5 @@
     <a href="<?php echo site_url('/destinations'); ?>">Destinations</a>
     <a href="<?php echo site_url('/about-us'); ?>">About Us</a>
     <a href="<?php echo site_url('/travel-guide'); ?>">Travel Guide</a>
-</div>
+    </div>   
+    </header>

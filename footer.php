@@ -4,8 +4,12 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="footer-logo">
     </div>
     <div class="footer-message">
-        <p>Explore new destinations with expert advice and personalized travel planning.</p>
-        <p><a href="<?php echo home_url(); ?>">Home</a> | <a href="<?php echo site_url('/destinations'); ?>">Destinations</a> | <a href="<?php echo site_url('/about-us'); ?>">About Us</a></p>
+        <p>
+            Explore new destinations with expert advice and personalized travel planning.
+        </p>
+        <p>
+            <a href="<?php echo home_url(); ?>">Home</a> | <a href="<?php echo site_url('/destinations'); ?>">Destinations</a> | <a href="<?php echo site_url('/about-us'); ?>">About Us</a>
+        </p>
     </div>
     <div class="footer-contact">
         <div class="footer-icons">

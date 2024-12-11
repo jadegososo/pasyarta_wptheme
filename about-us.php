@@ -88,12 +88,12 @@
                 endwhile;
                 wp_reset_postdata(); // Reset the query
                 else : echo '<p>No posts found</p>';
-            endif;
+                endif;
             ?>
         </div>
         <a href="<?php echo site_url('/destinations'); ?>" class="white-text green-button">View More</a>
 </div>
 
 <?php
-get_footer();
+    get_footer();
 ?>

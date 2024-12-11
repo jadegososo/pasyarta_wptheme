@@ -1,5 +1,5 @@
 <?php
-get_header();
+    get_header();
 ?>
 
 <header class="page-header">
@@ -19,5 +19,5 @@ get_header();
 </div>
 
 <?php
-get_footer();
+    get_footer();
 ?>
