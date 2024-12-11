@@ -3,7 +3,7 @@
 ?>
 
 <div class="main-content">
-    <div class="main-pic">
+    <div class="main-pic" style="background-image: url('<?php echo get_template_directory_uri()?>/assets/images/falls_background.jpg'); background-size:cover; background-position: center;">
         <div class="main-text">
             <h2>Start Discovering</h2>
             <h1>Your Next Journey</h1>        

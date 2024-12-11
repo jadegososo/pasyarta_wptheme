@@ -143,20 +143,33 @@ a{
 }
 
 
-.menu-items{
+.menu-items {
+    display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     height: 100vh;
     width: 300px;
     background-color: var(--primary-color);
-    position: absolute;
+    position: fixed;
     top: 0px;
     padding: 40px;
     color: white;
     box-shadow: 0 0 5px black;
-    transition: 0.5s ease;
+    right: -300px; /* Initially hidden off-screen */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Prevent interaction */
+    transition: right 0.3s ease, opacity 0.3s ease, visibility 0s ease 0.3s; /* Visibility delayed */
 }
+
+.menu-items.visible {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: right 0.3s ease, opacity 0.3s ease; /* Remove visibility transition here */
+}
+
+
 
 .menu-items i{
     cursor: pointer;
@@ -180,7 +193,6 @@ a{
     }
 
     .menu-items{
-        display: flex;
         z-index: 100;
     }
 }
@@ -194,9 +206,6 @@ a{
 
 .main-pic {
     width: 100%;
-    background-image: url("http://localhost/pasyarta/wp-content/themes/pasyarta_theme/assets/images/falls_background.jpg");
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -603,9 +612,6 @@ a{
     margin-bottom: 40px;
     background-color: var(--gray-color);
     padding: 80px 40px;
-    background-image: url("http://localhost/pasyarta/wp-content/themes/pasyarta_theme/assets/images/leyte-diving.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 .page-title{
@@ -695,8 +701,6 @@ a{
 }
 
 .destination-ending{
-    background-image: url("http://localhost/pasyarta/wp-content/themes/pasyarta_theme/assets/images/leyte-diving.jpg");
-    background-position: right;
     padding: 80px;
 }
 

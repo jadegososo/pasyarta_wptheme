@@ -35,7 +35,7 @@
             </button>
         </div>
         <i class="fa-solid fa-bars burger-menu" onclick="toggleMenu()"></i>
-        <div class="menu-items" style="right: -500px;">
+        <div class="menu-items">
     <div class="close-div">
         <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
     </div>

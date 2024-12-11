@@ -1,17 +1,11 @@
 function toggleMenu() {
     const menuItems = document.querySelector('.menu-items');
     
-    if (menuItems.style.right === '-500px') {
-        // Show the menu
-        menuItems.style.right = '0';
-                 
+    if (menuItems.classList.contains('visible')) {
+        // Hide the menu
+        menuItems.classList.remove('visible');
     } else {
-         // Hide the menu
-        menuItems.style.right = '-500px';
-        
+        // Show the menu
+        menuItems.classList.add('visible');
     }
 }
-
-
-
-

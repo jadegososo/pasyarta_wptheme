@@ -6,7 +6,10 @@
     get_header(); 
 ?>
 
-<header class="page-header">
+<header class="page-header" style="
+background-image: url('<?php echo get_template_directory_uri()?>/assets/images/leyte-diving.jpg'); 
+background-position: center;
+background-size: cover;">
     <h2 class="page-title">Destinations</h2>
     <?php
         get_search_form();
@@ -75,7 +78,9 @@
     </div>
 </main>
 
-<div class="destination-ending">
+<div class="destination-ending" style="
+background-image: url('<?php echo get_template_directory_uri() ?>/assets/images/leyte-diving.jpg');
+background-position: right;">
     
 </div>
 
